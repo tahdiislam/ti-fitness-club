@@ -20,6 +20,16 @@ const Questions = () => {
               the DOM which have actually occurred.
             </p>
           </div>
+          <div className="p-5 border border-dotted border-blue-400  hover:shadow-md">
+            <h3 className="text-2xl font-semibold mb-3">
+              Q2: What are the difference between props and state?
+            </h3>
+            <p className="text-lg text-justify font-medium">
+              Props are used to pass data from one component to another. The
+              state is a local data storage that is local to the component only
+              and cannot be passed to other components. Props is only readable you can change it property on the other hand you can change the state.
+            </p>
+          </div>
         </div>
       </div>
     );
