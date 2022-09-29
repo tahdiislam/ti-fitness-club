@@ -34,12 +34,13 @@ const Body = () => {
   return (
     <section className="container mx-auto">
       <Header></Header>
-      <div className="main-container">
-        <div>
+      <div className="main-container grid sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-6
+      ">
+        <div className="md:col-span-3 lg:col-span-4">
           <h4 className="text-2xl font-semibold my-7">
             Select today's exercise
           </h4>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {exercises.map((exercise) => (
               <AllExercise
                 setDuration={setDuration}
@@ -49,7 +50,7 @@ const Body = () => {
             ))}
           </div>
         </div>
-        <div className="side-Bar">
+        <div className="side-Bar md:col-span-2 lg:col-span-2">
           <SideBar
             duration={duration}
             breakTime={breakTime}
