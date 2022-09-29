@@ -1,4 +1,5 @@
 import React from 'react';
+import { CheckLg } from 'react-bootstrap-icons';
 import userImg from '../../images/user-img.jpg'
 
 const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
@@ -34,7 +35,7 @@ const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
             10s
           </button>
           <button
-            onClick={() => handleAddBreakTime(20)  }
+            onClick={() => handleAddBreakTime(20)}
             className="hover:bg-blue-600 hover:text-white p-4 rounded-xl text-xl"
           >
             20s
@@ -78,8 +79,9 @@ const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
           <h3 className="text-xl font-semibold">{breakTime}s</h3>
         </div>
       </div>
-      <button className="bg-blue-600 w-full py-3 text-white hover:bg-blue-800 rounded-lg">
-        Activity Completed
+      <button className="bg-blue-600 w-full py-3 text-white hover:bg-blue-800 rounded-lg flex items-center justify-center">
+        <p>Activity Completed</p>
+        <CheckLg />
       </button>
     </div>
   );
