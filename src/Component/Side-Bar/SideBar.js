@@ -3,7 +3,7 @@ import userImg from '../../images/user-img.jpg'
 
 const SideBar = () => {
     return (
-      <div className="ml-3 sticky top-0">
+      <div className="ml-3 sticky top-4">
         <div>
           <div className="flex items-center justify-center bg-blue-100 px-3 py-2 rounded-lg">
             <img className="w-10 rounded-lg" src={userImg} alt="user-images" />
@@ -52,11 +52,11 @@ const SideBar = () => {
             Exercise Details
           </h3>
           <div className="flex items-center justify-center bg-blue-100 px-3 py-4 rounded-lg my-4">
-            <h3 className="text-xl font-semibold">Exercise Time</h3>
+            <h3 className="text-xl font-semibold">Exercise Time:</h3>
             <h3 className="text-xl font-semibold"></h3>
           </div>
           <div className="flex items-center justify-center bg-blue-100 px-3 py-4 rounded-lg my-4">
-            <h3 className="text-xl font-semibold">Exercise Time</h3>
+            <h3 className="text-xl font-semibold">Break Time:</h3>
             <h3 className="text-xl font-semibold"></h3>
           </div>
         </div>
