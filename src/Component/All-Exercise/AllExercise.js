@@ -12,7 +12,7 @@ const AllExercise = ({exercise}) => {
           <p>For Age: {age}</p>
           <p>Time Required: {duration}</p>
         </div>
-        <button className='bg-blue-600 hover:bg-blue-800 text-white hover:text-gray-300 px-8 py-3 w-full absolute bottom-0'>Add To List</button>
+        <button className='bg-blue-600 hover:bg-blue-800 text-white hover:text-gray-300 px-8 py-3 w-full absolute bottom-0 rounded-lg'>Add To List</button>
       </div>
     );
 };
