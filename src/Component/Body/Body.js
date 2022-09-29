@@ -6,6 +6,7 @@ import './Body.css'
 
 const Body = () => {
   const [exercises, setExercises] = useState([]);
+  const [duration, setDuration] = useState(0)
 
   // load data from api
   useEffect(() => {
@@ -22,12 +23,12 @@ const Body = () => {
           <h4 className="text-2xl font-semibold my-7">Select today's exercise</h4>
           <div className="grid grid-cols-3 gap-4">
             {exercises.map((exercise) => (
-              <AllExercise key={exercise.id} exercise={exercise}></AllExercise>
+              <AllExercise setDuration={setDuration} key={exercise.id} exercise={exercise}></AllExercise>
             ))}
           </div>
         </div>
         <div className="side-Bar">
-            <SideBar></SideBar>
+            <SideBar duration={duration}></SideBar>
         </div>
       </div>
     </section>
