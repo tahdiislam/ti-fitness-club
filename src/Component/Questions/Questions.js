@@ -30,6 +30,14 @@ const Questions = () => {
               and cannot be passed to other components. Props is only readable you can change it property on the other hand you can change the state.
             </p>
           </div>
+          <div className="p-5 border border-dotted border-blue-400  hover:shadow-md">
+            <h3 className="text-2xl font-semibold mb-3">
+              Q3: What else does usEffect do besides data loading?
+            </h3>
+            <p className="text-lg text-justify font-medium">
+              With useEffect you can validating input field on running state change, live filtering on running state change, trigger animation on new array value on running state change, update paragraph list on fetched API data update on running state change.  
+            </p>
+          </div>
         </div>
       </div>
     );
