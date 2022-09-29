@@ -4,7 +4,7 @@ import logo from '../../images/logo.png'
 
 const Header = () => {
     return (
-        <header className='text-blue-500 text-4xl font-medium flex mt-6'>
+        <header className='text-blue-500 text-4xl font-semibold flex mt-6'>
             <img className='mr-2' src={logo} alt="logo" />
             <h1>TI Fitness Club</h1>
         </header>
