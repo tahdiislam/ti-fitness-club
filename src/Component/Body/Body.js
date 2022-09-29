@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import addToDB from "../../Utilities/localDB";
+import { addToDB, getBreakTimeFromDB } from "../../Utilities/localDB";
 import AllExercise from "../All-Exercise/AllExercise";
 import Header from "../Header/Header";
 import SideBar from "../Side-Bar/SideBar";
@@ -17,9 +17,17 @@ const Body = () => {
       .then((data) => setExercises(data));
   }, []);
 
+  //get break time from local storage
+  useEffect(() => {
+    const storedBreakTime = getBreakTimeFromDB();
+    // console.log(storedBreakTime)
+    // display break time
+    setBreakTime(storedBreakTime)
+  },[])
   // add break time handler
   const handleAddBreakTime = (breakTime) => {
     setBreakTime(breakTime);
+    // set break time in local Storage
     addToDB(breakTime);
   };
 

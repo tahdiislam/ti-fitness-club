@@ -4,6 +4,9 @@ const addToDB = breakTime => {
 }
 
 // get from local Storage 
+const getBreakTimeFromDB = () => {
+   const storedBreakTime =  localStorage.getItem("break-time");
+   return storedBreakTime;
+}
 
-
-export default addToDB;
+export {addToDB, getBreakTimeFromDB};
