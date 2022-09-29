@@ -16,7 +16,7 @@ const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
       <div>
         <div className="flex items-center justify-center bg-blue-100 px-3 py-2 rounded-lg">
           <img className="w-10 rounded-lg" src={userImg} alt="user-images" />
-          <h3 className="text-xl font-bold ml-3">Tahdi Islam</h3>
+          <h3 className="text-xl font-bold">Tahdi Islam</h3>
         </div>
         <div className="flex justify-around my-4 bg-blue-100 px-3 py-2 rounded-lg">
           <div className="flex flex-col items-center">
@@ -68,7 +68,7 @@ const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
           </button>
         </div>
       </div>
-      <div className="exercise-details ml-3 my-6">
+      <div className="exercise-details my-6">
         <h3 className="text-2xl font-bold text-center bg-blue-100 px-3 py-2 rounded-lg">
           Exercise Details
         </h3>
