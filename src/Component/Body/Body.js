@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import addToDB from "../../Utilities/localDB";
 import AllExercise from "../All-Exercise/AllExercise";
 import Header from "../Header/Header";
 import SideBar from "../Side-Bar/SideBar";
@@ -15,6 +16,12 @@ const Body = () => {
       .then((res) => res.json())
       .then((data) => setExercises(data));
   }, []);
+
+  // add break time handler
+  const handleAddBreakTime = (breakTime) => {
+    setBreakTime(breakTime);
+    addToDB(breakTime);
+  };
 
   return (
     <section className="container mx-auto">
@@ -38,7 +45,7 @@ const Body = () => {
           <SideBar
             duration={duration}
             breakTime={breakTime}
-            setBreakTime={setBreakTime}
+            handleAddBreakTime={handleAddBreakTime}
           ></SideBar>
         </div>
       </div>

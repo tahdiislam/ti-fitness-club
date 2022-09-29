@@ -1,7 +1,7 @@
 import React from 'react';
 import userImg from '../../images/user-img.jpg'
 
-const SideBar = ({ duration, breakTime, setBreakTime }) => {
+const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
   return (
     <div className="ml-3 sticky top-4">
       <div>
@@ -28,37 +28,37 @@ const SideBar = ({ duration, breakTime, setBreakTime }) => {
         <h3 className="text-2xl font-bold text-center">Add a Break</h3>
         <div className="flex justify-around items-center my-4">
           <button
-            onClick={() => setBreakTime(10)}
+            onClick={() => handleAddBreakTime(10)}
             className="hover:bg-blue-600 hover:text-white p-4 rounded-xl text-xl"
           >
             10s
           </button>
           <button
-            onClick={() => setBreakTime(20)}
+            onClick={() => handleAddBreakTime(20)  }
             className="hover:bg-blue-600 hover:text-white p-4 rounded-xl text-xl"
           >
             20s
           </button>
           <button
-            onClick={() => setBreakTime(30)}
+            onClick={() => handleAddBreakTime(30)}
             className="hover:bg-blue-600 hover:text-white p-4 rounded-xl text-xl"
           >
             30s
           </button>
           <button
-            onClick={() => setBreakTime(40)}
+            onClick={() => handleAddBreakTime(40)}
             className="hover:bg-blue-600 hover:text-white p-4 rounded-xl text-xl"
           >
             40s
           </button>
           <button
-            onClick={() => setBreakTime(50)}
+            onClick={() => handleAddBreakTime(50)}
             className="hover:bg-blue-600 hover:text-white p-4 rounded-xl text-xl"
           >
             50s
           </button>
           <button
-            onClick={() => setBreakTime(60)}
+            onClick={() => handleAddBreakTime(60)}
             className="hover:bg-blue-600 hover:text-white p-4 rounded-xl text-xl"
           >
             60s
