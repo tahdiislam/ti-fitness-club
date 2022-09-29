@@ -27,7 +27,7 @@ const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
       </div>
       <div className="user-activity my-6 bg-blue-100 px-3 py-2 rounded-lg">
         <h3 className="text-2xl font-bold text-center">Add a Break</h3>
-        <div className="flex justify-around items-center my-4">
+        <div className="flex justify-around items-center flex-wrap my-4">
           <button
             onClick={() => handleAddBreakTime(10)}
             className="hover:bg-blue-600 hover:text-white p-4 rounded-xl text-xl"
