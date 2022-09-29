@@ -1,4 +1,5 @@
 import React from 'react';
+import { PlusSquare } from 'react-bootstrap-icons';
 import './AllExercise.css'
 
 const AllExercise = ({exercise, setDuration}) => {
@@ -13,10 +14,11 @@ const AllExercise = ({exercise, setDuration}) => {
           <p>Time Required: {duration}s</p>
         </div>
         <button
-          onClick={() => setDuration(previous => previous + duration)}
-          className="bg-blue-600 hover:bg-blue-800 text-white hover:text-gray-300 px-8 py-3 w-full absolute bottom-0 left-0 rounded-lg"
+          onClick={() => setDuration((previous) => previous + duration)}
+          className="bg-blue-600 hover:bg-blue-800 text-white hover:text-gray-300 px-8 py-3 w-full absolute bottom-0 left-0 rounded-lg flex items-center justify-center"
         >
-          Add To List
+          <p className="mr-2">Add To List</p>
+          <PlusSquare className="font-bold" />
         </button>
       </div>
     );
