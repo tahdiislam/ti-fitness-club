@@ -47,6 +47,22 @@ const SideBar = () => {
             </button>
           </div>
         </div>
+        <div className="exercise-details ml-3 my-6">
+          <h3 className="text-2xl font-bold text-center bg-blue-100 px-3 py-2 rounded-lg">
+            Exercise Details
+          </h3>
+          <div className="flex items-center justify-center bg-blue-100 px-3 py-4 rounded-lg my-4">
+            <h3 className="text-xl font-semibold">Exercise Time</h3>
+            <h3 className="text-xl font-semibold"></h3>
+          </div>
+          <div className="flex items-center justify-center bg-blue-100 px-3 py-4 rounded-lg my-4">
+            <h3 className="text-xl font-semibold">Exercise Time</h3>
+            <h3 className="text-xl font-semibold"></h3>
+          </div>
+        </div>
+        <button className="bg-blue-600 w-full py-3 text-white hover:bg-blue-800 rounded-lg">
+          Activity Completed
+        </button>
       </div>
     );
 };
