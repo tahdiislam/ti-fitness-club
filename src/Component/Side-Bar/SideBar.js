@@ -1,8 +1,16 @@
 import React from 'react';
 import { CheckLg } from 'react-bootstrap-icons';
 import userImg from '../../images/user-img.jpg'
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 
 const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
+  // finish toast
+  const notify = () => {
+    toast.success('you are done', {position: toast.POSITION.TOP_CENTER, autoClose: 1000})
+  };
+
   return (
     <div className="ml-3 sticky top-4">
       <div>
@@ -58,12 +66,6 @@ const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
           >
             50s
           </button>
-          <button
-            onClick={() => handleAddBreakTime(60)}
-            className="hover:bg-blue-600 hover:text-white p-4 rounded-xl text-xl"
-          >
-            60s
-          </button>
         </div>
       </div>
       <div className="exercise-details ml-3 my-6">
@@ -79,10 +81,14 @@ const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
           <h3 className="text-xl font-semibold">{breakTime}s</h3>
         </div>
       </div>
-      <button className="bg-blue-600 w-full py-3 text-white hover:bg-blue-800 rounded-lg flex items-center justify-center">
+      <button
+        onClick={notify}
+        className="bg-blue-600 w-full py-3 text-white hover:bg-blue-800 rounded-lg flex items-center justify-center"
+      >
         <p>Activity Completed</p>
         <CheckLg />
       </button>
+      <ToastContainer/>
     </div>
   );
 };

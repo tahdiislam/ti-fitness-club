@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { addToDB, getBreakTimeFromDB } from "../../Utilities/localDB";
 import AllExercise from "../All-Exercise/AllExercise";
 import Header from "../Header/Header";
+import Questions from "../Questions/Questions";
 import SideBar from "../Side-Bar/SideBar";
 import './Body.css'
 
@@ -58,6 +59,7 @@ const Body = () => {
           ></SideBar>
         </div>
       </div>
+      <Questions></Questions>
     </section>
   );
 };
