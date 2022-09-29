@@ -16,7 +16,7 @@ const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
       <div>
         <div className="flex items-center justify-center bg-blue-100 px-3 py-2 rounded-lg">
           <img className="w-10 rounded-lg" src={userImg} alt="user-images" />
-          <h3 className="text-xl font-bold">Tahdi Islam</h3>
+          <h3 className="text-xl font-bold ml-2">Tahdi Islam</h3>
         </div>
         <div className="flex justify-around my-4 bg-blue-100 px-3 py-2 rounded-lg">
           <div className="flex flex-col items-center">
@@ -78,7 +78,7 @@ const SideBar = ({ duration, breakTime, handleAddBreakTime }) => {
         </div>
         <div className="flex items-center justify-around bg-blue-100 px-3 py-4 rounded-lg my-4">
           <h3 className="text-xl font-semibold">Break Time:</h3>
-          <h3 className="text-xl font-semibold">{breakTime}s</h3>
+          <h3 className="text-xl font-semibold">{breakTime ? breakTime : 0}s</h3>
         </div>
       </div>
       <button
