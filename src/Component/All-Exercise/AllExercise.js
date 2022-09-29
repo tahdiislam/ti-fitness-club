@@ -1,17 +1,18 @@
 import React from 'react';
+import './AllExercise.css'
 
 const AllExercise = ({exercise}) => {
     console.log(exercise)
     const {img, name, age, duration} = exercise
     return (
-      <div>
-        <img src={img} alt="" />
+      <div className='exercise-container relative'>
+        <img src={img} className='h-72' alt="" />
         <div>
-          <h3>{name}</h3>
+          <h3 className='text-2xl font-medium'>{name}</h3>
           <p>For Age: {age}</p>
           <p>Time Required: {duration}</p>
         </div>
-        <button className=''>Add To List</button>
+        <button className='bg-blue-600 hover:bg-blue-800 text-white hover:text-gray-300 px-8 py-3 w-full absolute bottom-0'>Add To List</button>
       </div>
     );
 };
